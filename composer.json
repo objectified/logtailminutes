@@ -1,3 +1,8 @@
 {
-    "name": "objectified/logtailminutes"
+    "name": "objectified/logtailminutes",
+    "type": "library",
+    "description": "Log extraction utility",
+    "keywords": ["logging","monitoring"],
+    "homepage": "http://github.com/objectified/logtailminutes",
+    "license": "MIT"
 }
