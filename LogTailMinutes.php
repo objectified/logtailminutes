@@ -63,6 +63,9 @@ class LogTailMinutes {
     public function getLines() {
         $cmd = $this->buildEgrepCmd();
 
-        return explode("\n", shell_exec($cmd));
+        $lines = explode("\n", shell_exec($cmd));
+        array_pop($lines); // remove trailing empty line
+
+        return $lines;
     }
 }
